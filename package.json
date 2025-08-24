@@ -1,0 +1,26 @@
+{
+  "name": "logsapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-Nadson/LogsAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-Nadson/LogsAPI/issues"
+  },
+  "homepage": "https://github.com/Dev-Nadson/LogsAPI#readme",
+  "description": "",
+  "dependencies": {
+    "fastify": "^5.5.0",
+    "postgres": "^3.4.7"
+  }
+}
