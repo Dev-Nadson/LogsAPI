@@ -10,15 +10,8 @@ server.get('/logs', async () => {
 })
 
 server.post('/logs/batch', async (req, reply) => {
-    const { pathname, method, status_code, duration, started_at } = req.body
-    await db.create({
-        pathname,
-        method,
-        status_code,
-        duration,
-        started_at
-    })
-
+    const logs = req.body
+    await db.create(logs)
     return reply.status(201).send()
 })
 
