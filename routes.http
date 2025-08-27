@@ -6,13 +6,29 @@ Content-Type: application/json
 POST http://localhost:5050/logs/batch
 Content-Type: application/json
 
+[
   {
     "pathname": "/api/users",
     "method": "GET",
     "status_code": 200,
     "duration": 87,
     "started_at": "2025-05-28T13:00:15.123Z"
+  },
+  {
+    "pathname": "/api/products",
+    "method": "POST",
+    "status_code": 201,
+    "duration": 134,
+    "started_at": "2025-05-28T13:00:16.891Z"
+  },
+  {
+    "pathname": "/api/login",
+    "method": "POST",
+    "status_code": 401,
+    "duration": 45,
+    "started_at": "2025-05-28T13:00:17.456Z"
   }
+]
 
 ###
 
